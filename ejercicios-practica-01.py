@@ -11,4 +11,3 @@ calculo_segundos_minuto = minuto * 60
 #Total de segundos
 calculo_total_segundos = int(calculo_segundos_hora + calculo_segundos_minuto + segundo)
 print(f"El tiempo total en segundos es: {calculo_total_segundos}.")
-

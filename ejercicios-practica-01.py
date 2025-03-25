@@ -1,13 +1,29 @@
-print("Bienvenido a la Calculadora de Segundos.")
-hora = int(input("Ingresa una cantidad de horas: "))
-minuto = int(input("Ingresa una cantidad de minutos: "))
-segundo = int(input("Ingresa una cantidad de segundos: "))
-#Para calcular de horas a segundos se debe múltiplicar
-# la cantidad de horas * 60 (transforma a minutos) * 60 (transforma a segundos)
-# otra opcion en un solo paso: cantidad de horas * 3600 (60 minutos * 60 segundos) 
-calculo_segundos_hora = hora * 60 * 60
-#Para calcular minutos a segundos
-calculo_segundos_minuto = minuto * 60
-#Total de segundos
-calculo_total_segundos = int(calculo_segundos_hora + calculo_segundos_minuto + segundo)
-print(f"El tiempo total en segundos es: {calculo_total_segundos}.")
+'''
+6. Promedio de cuatro números 
+ Solicita cuatro números al usuario y muestra su promedio. 
+ Ejemplo: 
+ Entrada: 
+ Número 1: 4 
+ Número 2: 6 
+ Número 3: 8 
+ Número 4: 10 
+ Salida: 
+ El promedio es: 7.0 
+'''
+print("Bienvenido a la Calculadora.")
+#Solicitamos al usuario que ingrese el primer numero
+primer_numero = float(input("Ingresa el primer numero: "))
+#Solicitamos al usuario que ingrese el segundo numero
+segundo_numero = float(input("Ingresa el segundo numero: "))
+#Solicitamos al usuario que ingrese el tercero numero
+tercer_numero = float(input("Ingresa el tercer numero: "))
+#Solicitamos al usuario que ingrese el cuarto numero
+cuarto_numero = float(input("Ingresa el cuarto numero: "))
+#Calculamos el valor 
+porcentaje_descuento = int(input("Ingresa el porcentaje de descuento: "))
+#Calculamos el valor del porcentaje sobre el valor del producto
+calculo_valor_porcentaje = int(precio_producto * (porcentaje_descuento /100))
+#Calculamos el valor final del producto
+valor_final_producto = int(precio_producto - calculo_valor_porcentaje)
+#Imprimimos el resultado del valor final del producto
+print(f"El precio final con descuento es: ${valor_final_producto}.")

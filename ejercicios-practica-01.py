@@ -1,29 +1,17 @@
 '''
-6. Promedio de cuatro números 
- Solicita cuatro números al usuario y muestra su promedio. 
+12. Cantidad de billetes 
+ Pide al usuario una cantidad de dinero en dólares y calcula cuántos billetes de 100, 50, 
+20, 10, 5 y 1 se necesitan para formar esa cantidad. 
  Ejemplo: 
- Entrada: 
- Número 1: 4 
- Número 2: 6 
- Número 3: 8 
- Número 4: 10 
+ Entrada: 186 
  Salida: 
- El promedio es: 7.0 
+ 1 billete de 100 
+ 1 billete de 50 
+ 1 billete de 20 
+ 1 billete de 10 
+ 1 billete de 5 
+ 1 billete de 1 
 '''
-print("Bienvenido a la Calculadora.")
-#Solicitamos al usuario que ingrese el primer numero
-primer_numero = float(input("Ingresa el primer numero: "))
-#Solicitamos al usuario que ingrese el segundo numero
-segundo_numero = float(input("Ingresa el segundo numero: "))
-#Solicitamos al usuario que ingrese el tercero numero
-tercer_numero = float(input("Ingresa el tercer numero: "))
-#Solicitamos al usuario que ingrese el cuarto numero
-cuarto_numero = float(input("Ingresa el cuarto numero: "))
-#Calculamos el valor 
-porcentaje_descuento = int(input("Ingresa el porcentaje de descuento: "))
-#Calculamos el valor del porcentaje sobre el valor del producto
-calculo_valor_porcentaje = int(precio_producto * (porcentaje_descuento /100))
-#Calculamos el valor final del producto
-valor_final_producto = int(precio_producto - calculo_valor_porcentaje)
-#Imprimimos el resultado del valor final del producto
-print(f"El precio final con descuento es: ${valor_final_producto}.")
+print("Bienvenido.")
+#Solicitar al usuario que ingrese la cantidad de dinero.
+

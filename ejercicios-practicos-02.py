@@ -112,7 +112,21 @@ print(f"El precio final con descuento es: ${valor_final_producto}.")
  Número 4: 10 
  Salida: 
  El promedio es: 7.0 
- 
+ '''
+print("Bienvenido a la Calculadora.")
+#Solicitamos al usuario que ingrese el primer numero
+primer_numero = float(input("Ingresa el primer numero: "))
+#Solicitamos al usuario que ingrese el segundo numero
+segundo_numero = float(input("Ingresa el segundo numero: "))
+#Solicitamos al usuario que ingrese el tercero numero
+tercer_numero = float(input("Ingresa el tercer numero: "))
+#Solicitamos al usuario que ingrese el cuarto numero
+cuarto_numero = float(input("Ingresa el cuarto numero: "))
+#Calculamos el promedio sumando los numeros y dividiendo el resultado por la cantidad de numeros ingresados
+calculo_promedio = float((primer_numero + segundo_numero + tercer_numero + cuarto_numero) / 4)
+#Imprimimos el resultado del promedio de los numeros ingresados
+print(f"El promedio es: {calculo_promedio}")
+'''''
 7. Tiempo en minutos 
  Pide al usuario una cantidad de días, horas y minutos, y calcula el tiempo total en 
 minutos. 
@@ -122,26 +136,78 @@ minutos.
  Horas: 2 
  Minutos: 30 
  Salida: 
- El tiempo total es: 1650 minutos 
- 
+ El tiempo total es: 1650 minutos / son 1590 minutos.
+ '''
+print("Bienvenido a la Calculadora de minutos.")
+#Solicitar al usuario que ingrese una cantidad de dias
+dias = int(input("Ingrese una cantidad de dias: "))
+#Solicitar al usuario que ingrese una cantidad de horas
+horas = int(input("Ingresa una cantidad de horas: "))
+#Solicitar al usuario que ingrese una cantidad de minutos
+minutos = int(input("Ingrese una cantidad de minutos: "))
+#Calcular tiempo total en minutos con los valores ingresados
+#Transformar los dias en horas, luego transformar las horas en minutos
+dias_en_minutos = (dias * 24) * 60 
+#print(f"Dias en minutos: {dias_en_minutos}")
+#Transformar las horas en minutos
+horas_en_minutos = horas * 60
+#print(f"Horas en minutos: {horas_en_minutos}")
+#print(f"Cantidad de minutos: {minutos}")
+#Calcular la suma de la cantidad de minutos totales
+total_de_minutos = dias_en_minutos + horas_en_minutos + minutos
+#Imprimimos el resultado del total de minutos.
+print(f"El tiempo total es: {total_de_minutos}.")
+'''''
 8. Número al revés 
  Pide al usuario un número de tres dígitos y muéstralo al revés. 
  Ejemplo: 
  Entrada: 123 
  Salida: 321 
- 
+ '''
+print("Bienvenido.")
+#Solicitar al usuario que ingrese un numero de 3 digitos
+numero_ingresado = str(input("Ingrese un numero de 3 digitos: "))
+#Invertir los numeros
+#Utilizare el metodo de 'corte' [inicio:fin] que sirve para invertir cadenas
+#Este metodo funciona indicando una posicion de 'Inicio'=0 y una posicion de 'Fin'=N
+#Para este caso utilizare el metodo de corte indicando el final con '-1' para invertir la cadena.
+numero_invertido = numero_ingresado [::-1]
+#Imprimir el numero final
+print(numero_invertido)
+'''
 9. Suma de los dígitos de un número 
  Solicita al usuario un número de tres cifras y muestra la suma de sus dígitos. 
  Ejemplo: 
  Entrada: 527 
  Salida: La suma de los dígitos es: 14 
- 
+ '''
+print("Bienvenido.")
+#Solicitar al usuario que ingrese un numero de 3 digitos
+numero_ingresado = str(input("Ingrese un numero de 3 digitos: "))
+#print(type(numero_ingresado)) - valido el tipo de dato ingresado
+#Separar los digitos del numero ingresado
+primer_digito = int(numero_ingresado[0])
+segundo_digito = int(numero_ingresado[1])
+tercer_digito = int(numero_ingresado[2])
+#Calcular la suma de los numeros 
+calculo_suma = primer_digito + segundo_digito + tercer_digito
+#Imprimir el resultado con el total de la suma
+print(f"La suma de los digitos es: {calculo_suma}")
+''' 
 10. Conversión de millas a kilómetros 
  Pide al usuario una distancia en millas y conviértela a kilómetros (1 milla = 1.609 km). 
  Ejemplo: 
  Entrada: 5 
  Salida: La distancia en kilómetros es: 8.045 km 
- 
+ '''
+print("Bienvenido.")
+#Solicitar al usuario que ingrese una distancia en millas
+millas_ingresadas = int(input("Ingrese una distacia en millas: "))
+#Convertimos las millas en kilometros
+kilometros = millas_ingresadas * 1609
+#Imprimimos el resultado de la conversion
+print(f"La distancia en kilometros es: {kilometros}km.")
+'''
 11. Cálculo de la hipotenusa 
  Pide al usuario la longitud de los dos catetos de un triángulo rectángulo y calcula la 
 hipotenusa. 
@@ -150,7 +216,21 @@ hipotenusa.
  Cateto 1: 3 
  Cateto 2: 4 
  Salida: La hipotenusa es: 5.0 
- 
+ '''
+#Import de libreria matematica
+import math
+print("Bienvenido.")
+#Solicitar al usuario que ingrese los catetos de un triangulo rectangulo
+#Solicitamos al usuario que ingrese el primer cateto
+primer_cateto = float(input("Ingresa el primer cateto: "))
+#Solicitamos al usuario que ingrese el segundo cateto
+segundo_cateto = float(input("Ingresa el segundo cateto: "))
+#Calculamos el valor de la hipotenusa
+#Incorporamos la libreria 'math', para utilizar la funcion '.sqrt' para calcular la Raiz Cuadrada del resultado
+calculo_hipotenusa = math.sqrt((primer_cateto ** 2) + (segundo_cateto ** 2))
+#Verificamos le valor de la sumaa
+print(calculo_hipotenusa)
+'''
 12. Cantidad de billetes 
  Pide al usuario una cantidad de dinero en dólares y calcula cuántos billetes de 100, 50, 
 20, 10, 5 y 1 se necesitan para formar esa cantidad. 

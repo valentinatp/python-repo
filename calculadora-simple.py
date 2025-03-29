@@ -1,8 +1,3 @@
-#Calcular la suma entre dos numeros e imprimir el resultado.
-#Solicitar al usuario que ingrese el primer número.
-primer_numero = float(input("Ingrese el primer numero: "))
-#Solicitar al usuario que ingrese el segundo número.
-segundo_numero = float(input("Ingrese el segundo numero: "))
 #Preguntar al usuario que calculo quiere realizar con los numeros ingresados.
 # 1: Suma
 # 2: Resta
@@ -12,7 +7,11 @@ segundo_numero = float(input("Ingrese el segundo numero: "))
 print("Escoje el calculo a realizar.")
 print(f"Opciones de calculo: 1: Suma, 2: Resta, 3: Multiplicacion, 4: Division, 5: Modulo")
 calculo_elegido = int(input("Ingrese el numero de la operacion a realizar: "))
-print(f"Eleccion de usuario: {calculo_elegido}.")
+#print(f"Eleccion de usuario: {calculo_elegido}.")
+#Solicitar al usuario que ingrese el primer número.
+primer_numero = float(input("Ingrese el primer numero: "))
+#Solicitar al usuario que ingrese el segundo número.
+segundo_numero = float(input("Ingrese el segundo numero: "))
 if calculo_elegido == 1:
     #Calcular la suma entre ambos números.
     calculo_suma = primer_numero + segundo_numero

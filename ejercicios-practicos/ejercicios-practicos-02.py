@@ -243,13 +243,50 @@ print(calculo_hipotenusa)
  1 billete de 10 
  1 billete de 5 
  1 billete de 1 
- 
+ '''
+print("Bienvenido.")
+#Solicitar al usuario que ingrese la cantidad de dinero.
+dinero_ingresado = int(input("Ingrese la cantidad de dinero a consultar: "))
+#Calcular cuantos billetes de 100 contiene el monto.
+calculo_billete_cien = dinero_ingresado / 100
+print(f"{int(calculo_billete_cien)} billete de 100.")
+dinero_actualizado = dinero_ingresado - (int(calculo_billete_cien) * 100) 
+#print(int(dinero_actualizado))
+#Calcular cuantos billetes de 50 contiene el monto.
+calculo_billete_cincuenta = dinero_actualizado / 50
+print(f"{int(calculo_billete_cincuenta)} billete de 50.")
+dinero_actualizado = dinero_actualizado - 50 
+#Calcular cuantos billetes de 20 contiene el monto.
+calculo_billete_veinte = dinero_actualizado / 20
+print(f"{int(calculo_billete_veinte)} billete de 20.")
+dinero_actualizado = dinero_actualizado - 20 
+#Calcular cuantos billetes de 10 contiene el monto.
+calculo_billete_diez = dinero_actualizado / 10
+print(f"{int(calculo_billete_diez)} billete de 10.")
+dinero_actualizado = dinero_actualizado - 10 
+#Calcular cuantos billetes de 5 contiene el monto.
+calculo_billete_cinco = dinero_actualizado / 5
+print(f"{int(calculo_billete_cinco)} billete de 5.")
+dinero_actualizado = dinero_actualizado - 5
+#Calcular cuantos billetes de 1 contiene el monto.
+calculo_billete_uno = dinero_actualizado / 1
+print(f"{int(calculo_billete_uno)} billete de 1.")
+'''''
 13. Número par o impar 
  Pide al usuario un número y determina si es par o impar. 
  Ejemplo: 
  Entrada: 7 
  Salida: El número es impar. 
- 
+ '''
+print("Bienvenido.")
+#solicitamos al usuario que ingrese un numero para validar si es par o impar
+numero_ingresado = int(input("Ingrese un numero: "))
+#creamos la condicion para validar si es Par o Impar
+if ( numero_ingresado % 2 == 0 ):
+    print(f"El numero ingresado {numero_ingresado} es Par.")
+else:
+    print(f"El numero ingresado {numero_ingresado} es Impar.")
+'''''
 14. Cálculo del perímetro de un círculo 
  Pide al usuario el radio de un círculo y calcula su perímetro (P = 2πr). 
  Ejemplo: 
@@ -257,7 +294,14 @@ print(calculo_hipotenusa)
  Radio: 5 
  Salida: 
  El perímetro del círculo es: 31.42 
- 
+'''
+print("Bienvenido.")
+#solicitamos que ingrese el radio de un circulo.
+radio = int(input("Ingrese el Radio del circulo: "))
+calculo_perimetro_circulo = (2 * 3.14) * (radio)
+redondeo_perimetro = "{:.2f}".format(calculo_perimetro_circulo)
+print(float(redondeo_perimetro))
+'''''
 15. Conversión de temperatura 
  Pide al usuario una temperatura en grados Celsius y conviértela a Fahrenheit. (F = C × 
 9/5 + 32) 
@@ -267,3 +311,9 @@ print(calculo_hipotenusa)
 Salida: 
 La temperatura en Fahrenheit es: 77°F
 '''
+print("Bienvenido.")
+#solicitamos la usuario ingresar los grados en celsius
+grados_celsius = float(input("Ingrese los grados Celsius: "))
+#Calculamos la formula de transformacion
+calculo_fahrenheit = (grados_celsius * (9/5)) + 32
+print(f"La temperatura en Fahrenheit es: {calculo_fahrenheit}°F.")
